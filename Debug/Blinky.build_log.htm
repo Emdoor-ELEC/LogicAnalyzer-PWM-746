@@ -1,0 +1,237 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: chen mo, Emdoor, LIC=EPPLD-8980P-5BBEB-2AS3B-1DVA6-1DKQC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.39.0.0
+Toolchain Path:  D:\Keil_MDK539\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\MDK_Project\Example_Code\02-cmsis-rtos-blinky-LogicAnalyzer-PWM-746\Blinky.uvprojx
+Project File Date:  06/07/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'D:\Keil_MDK539\ARM\ARMCLANG\Bin'
+Rebuild target 'Debug'
+assembling irq_armv7m.S...
+compiling Blinky.c...
+compiling rtx_lib.c...
+compiling rtx_memory.c...
+compiling rtx_semaphore.c...
+compiling Buttons_746G_Discovery.c...
+compiling LED_746G_Discovery.c...
+compiling rtx_delay.c...
+compiling main.c...
+compiling rtx_system.c...
+compiling rtx_evr.c...
+compiling rtx_mutex.c...
+compiling rtx_evflags.c...
+compiling rtx_kernel.c...
+compiling rtx_mempool.c...
+compiling rtx_msgqueue.c...
+compiling os_systick.c...
+compiling RTX_Config.c...
+compiling rtx_timer.c...
+compiling rtx_thread.c...
+compiling stm32f7xx_hal.c...
+compiling EventRecorder.c...
+compiling stm32f7xx_hal_cortex.c...
+compiling stm32f7xx_hal_dma.c...
+compiling stm32f7xx_hal_gpio.c...
+compiling stm32f7xx_hal_pwr.c...
+compiling stm32f7xx_hal_pwr_ex.c...
+compiling stm32f7xx_hal_dma_ex.c...
+assembling startup_stm32f746xx.s...
+compiling system_stm32f7xx.c...
+compiling stm32f7xx_hal_rcc.c...
+compiling stm32f7xx_hal_rcc_ex.c...
+compiling stm32f7xx_hal_tim_ex.c...
+compiling stm32f7xx_hal_tim.c...
+linking...
+.\stm32f746ng.sct(14): warning: L6329W: Pattern *(HEAP) only matches removed unused sections.
+Program Size: Code=25864 RO-data=816 RW-data=172 ZI-data=36464  
+Finished: 0 information, 1 warning and 0 error messages.
+FromELF: creating hex file...
+".\Debug\Blinky.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: OS Tick Version: 1.0.1
+   * Component: RTOS2 Version: 2.3.0
+   * Component: CORE Version: 6.0.0
+   * Component: SysTick Version: 1.0.5
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-RTX.5.8.0.pack
+                ARM::CMSIS-RTX@5.8.0
+                RTX RTOS implementation of CMSIS-RTOS2 API
+   * Component: Keil RTX5 Variant: Source Version: 5.8.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-View.1.1.0.pack
+                ARM::CMSIS-View@1.1.0
+                Debugger visualization of software events and statistics
+   * Component: Event Recorder Variant: DAP Version: 1.5.3
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.MDK-Middleware.7.16.0.pack
+                Keil::MDK-Middleware@7.16.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: Buttons Version: 1.0.0
+   * Component: LED Version: 1.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.16.0.pack
+                Keil::STM32F7xx_DFP@2.16.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Buttons Version: 1.1.1
+   * Component: LED Version: 1.1.1
+   * Component: Classic Version: 1.3.0
+   * Component: Common Version: 1.3.0
+   * Component: Cortex Version: 1.3.0
+   * Component: DMA Version: 1.3.0
+   * Component: GPIO Version: 1.3.0
+   * Component: PWR Version: 1.3.0
+   * Component: RCC Version: 1.3.0
+   * Component: TIM Version: 1.3.0
+   * Component: Startup Version: 1.2.5
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/CMSIS
+  ./RTE/CMSIS-View
+  ./RTE/Device/STM32F746NGHx
+  ./RTE/_Debug
+  D:/Keil_MDK539/Arm/Packs/ARM/CMSIS-RTX/5.8.0/Include
+  D:/Keil_MDK539/Arm/Packs/ARM/CMSIS-View/1.1.0/EventRecorder/Include
+  D:/Keil_MDK539/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  D:/Keil_MDK539/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/RTOS2/Include
+  D:/Keil_MDK539/Arm/Packs/Keil/MDK-Middleware/7.16.0/Board
+  D:/Keil_MDK539/Arm/Packs/Keil/STM32F7xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include
+  D:/Keil_MDK539/Arm/Packs/Keil/STM32F7xx_DFP/2.16.0/Drivers/STM32F7xx_HAL_Driver/Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:Buttons(API)@1.0.0
+      Include file:  Board/Board_Buttons.h
+
+   * Component: ::Board Support:LED(API)@1.0.0
+      Include file:  Board/Board_LED.h
+
+   * Component: ::CMSIS:OS Tick(API)@1.0.1
+      Include file:  CMSIS/RTOS2/Include/os_tick.h
+
+   * Component: ::CMSIS:RTOS2(API)@2.3.0
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: ::Device:STM32Cube Framework(API)@1.0.0
+
+   * Component: ARM::CMSIS-View:Event Recorder&DAP@1.5.3
+      Include file:  EventRecorder/Include/EventRecorder.h
+      Source file:   EventRecorder/Source/EventRecorder.c
+      Include file:  EventRecorder/Config/EventRecorderConf.h
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: ARM::CMSIS:OS Tick:SysTick@1.0.5
+      Source file:   CMSIS/RTOS2/Source/os_systick.c
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5&Source@5.8.0
+      Source file:   Template/Semaphore.c
+      Source file:   Template/svc_user.c
+      Source file:   Template/Timer.c
+      Source file:   Config/RTX_Config.c
+      Source file:   Source/rtx_kernel.c
+      Source file:   Source/rtx_thread.c
+      Source file:   Source/rtx_delay.c
+      Include file:  Include/rtx_os.h
+      Source file:   Template/Mutex.c
+      Source file:   Source/rtx_timer.c
+      Source file:   Source/rtx_semaphore.c
+      Source file:   Source/rtx_memory.c
+      Source file:   Source/rtx_mempool.c
+      Source file:   Template/Thread.c
+      Source file:   Source/rtx_evflags.c
+      Source file:   Source/rtx_msgqueue.c
+      Source file:   Source/rtx_system.c
+      Source file:   Template/MsgQueue.c
+      Source file:   Source/rtx_mutex.c
+      Source file:   Source/rtx_evr.c
+      Include file:  Config/RTX_Config.h
+      Source file:   Template/Events.c
+      Source file:   Template/main.c
+      Source file:   Template/MemPool.c
+      Source file:   Source/GCC/irq_armv7m.S
+      Source file:   Source/rtx_lib.c
+
+   * Component: Keil::Board Support&STM32F746G-Discovery:Buttons@1.1.1
+      Source file:   MDK/Boards/ST/STM32F746G_Discovery/Common/Buttons_746G_Discovery.c
+
+   * Component: Keil::Board Support&STM32F746G-Discovery:LED@1.1.1
+      Source file:   MDK/Boards/ST/STM32F746G_Discovery/Common/LED_746G_Discovery.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic@1.3.0
+      Include file:  MDK/Templates/Inc/main.h
+      Include file:  MDK/Templates/Inc/stm32f7xx_hal_conf.h
+      Source file:   MDK/Templates/Src/stm32f7xx_it.c
+      Include file:  MDK/Templates/Inc/stm32f7xx_it.h
+      Include file:  CMSIS/Driver/Config/RTE_Device.h
+      Source file:   MDK/Templates/Src/stm32f7xx_hal_msp.c
+      Source file:   MDK/Templates/Src/main.c
+      Include file:  MDK/Templates_LL/Inc/main.h
+      Source file:   MDK/Templates_LL/Src/main.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common@1.3.0
+      Include file:  Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex@1.3.0
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA@1.3.0
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO@1.3.0
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR@1.3.0
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC@1.3.0
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM@1.3.0
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c
+      Source file:   Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c
+
+   * Component: Keil::Device:Startup@1.2.5
+      Source file:   MDK/Device/Source/ARM/STM32F74x_75x_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F74x_75x_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/arm/startup_stm32f746xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

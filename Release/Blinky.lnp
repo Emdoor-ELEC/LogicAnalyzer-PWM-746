@@ -1,0 +1,26 @@
+--cpu Cortex-M7.fp.sp
+".\release\main.o"
+".\release\blinky.o"
+".\release\buttons_746g_discovery.o"
+".\release\led_746g_discovery.o"
+".\release\rtx_lib.o"
+".\release\os_systick.o"
+".\release\rtx_config.o"
+"D:\Keil_MDK539\Arm\Packs\ARM\CMSIS-RTX\5.8.0\Library\ARM\RTX_V7MF.lib"
+".\release\stm32f7xx_hal.o"
+".\release\stm32f7xx_hal_cortex.o"
+".\release\stm32f7xx_hal_gpio.o"
+".\release\stm32f7xx_hal_pwr.o"
+".\release\stm32f7xx_hal_pwr_ex.o"
+".\release\stm32f7xx_hal_rcc.o"
+".\release\stm32f7xx_hal_rcc_ex.o"
+".\release\startup_stm32f746xx.o"
+".\release\system_stm32f7xx.o"
+".\release\stm32f7xx_hal_dma.o"
+".\release\stm32f7xx_hal_dma_ex.o"
+".\release\stm32f7xx_hal_tim.o"
+".\release\stm32f7xx_hal_tim_ex.o"
+--strict --scatter ".\stm32f746ng.sct"
+--any_placement=first_fit --diag_suppress=L6314 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Release\Blinky.map" -o .\Release\Blinky.axf
